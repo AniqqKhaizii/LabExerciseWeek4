@@ -1,0 +1,23 @@
+//labweek4
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double LoanAmount , InterestRate , MonthlyPayment, TotalAmount , TotalInterest;
+    int years;
+    
+    cout << "Enter the loan amount\n";
+    cin >> LoanAmount;
+    cout << "Enter the interest rate\n";
+    cin >> InterestRate;
+    cout << "Enter the years";
+    cin >> years;
+    
+    TotalInterest = LoanAmount * (InterestRate/100) * years;
+    TotalAmount = LoanAmount + TotalInterest;
+    MonthlyPayment = TotalAmount/120;
+    
+    cout << "Your total monthly payment you should pay is RM" << MonthlyPayment;
+}
